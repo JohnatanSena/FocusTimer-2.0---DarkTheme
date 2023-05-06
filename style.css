@@ -63,19 +63,21 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+ 
 }
 .cards > div {
   display: flex;
   gap: 3.2rem;
 }
-.cards button {
+.card button {
   border: transparent;
   background: transparent;
   background: var(--bg-cardsWhite);
   border-radius: 2.4rem;
+  cursor: pointer;
 }
 .card {
-  position: relative;
+  position: relative; 
 }
 .card input {
   background-color: var(--bg-dark);
@@ -115,6 +117,9 @@ button.clicked {
   background-color: #fff;
 }
 /* DARTK THEME */
+body.dark {
+  background: var(--bg-dark);
+}
 .timers.dark{
   color: white;
 }
