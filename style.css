@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --bg-white: hsl(0, 0%, 100%);
+  --bg-dark: hsla(240, 5%, 7%, 1);
+  --bg-clicked: hsla(194, 97%, 31%, 1);
+  --bg-cardsWhite: hsla(240, 9%, 89%, 1);
+  --bg-controlsDark: hsla(240, 7%, 78%, 1);
+  --bg-cardsDark: hsla(240, 6%, 17%, 1);
+
+  --fc-black: hsl(240, 6%, 21%);
+  --ff-roboto: 'Roboto', sans-serif
+
+}
+body {
+  font-family: var(--ff-roboto);
+}
+.hide {
+  display: none;
+}
+.toggleTheme {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 7rem;
+  padding: 6rem;
+}
+main {
+  height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19.2rem;
+}
+.display{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+.timers {
+  font-weight: 700;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+}
+.controls {
+  display: flex;
+  gap: 4rem;
+}
+.controls button {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+.cards  {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.cards > div {
+  display: flex;
+  gap: 3.2rem;
+}
+.cards button {
+  border: transparent;
+  background: transparent;
+  background: var(--bg-cardsWhite);
+  border-radius: 2.4rem;
+}
+.card {
+  position: relative;
+}
+.card input {
+  background-color: var(--bg-dark);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+
+  height: 0.4rem;
+  border-radius: 1rem;
+
+  position: absolute;
+  bottom: 0;
+  left: 2.4rem;
+  right: 2.4rem;
+  bottom: 2.4rem;
+}
+.card input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--bg-dark);
+
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border-radius: 1rem
+}
+button.clicked {
+  background: var(--bg-clicked);
+}
+.clicked svg path {
+  fill: white;
+}
+.clicked ~ input {
+  background-color: #fff;
+}
+.clicked ~ input::-webkit-slider-thumb {
+  background-color: #fff;
+}
+/* DARTK THEME */
+.timers.dark{
+  color: white;
+}
+button.dark svg path{
+  fill: var(--bg-controlsDark)
+}
+.cards button.dark{
+  background-color: var(--bg-cardsDark);
+}
+.dark ~ input {
+  background-color: var(--bg-white)
+}
+.dark ~ input::-webkit-slider-thumb{
+  background-color: var(--bg-white)
+}
+
+
+
+
