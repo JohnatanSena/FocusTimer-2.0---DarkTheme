@@ -9,6 +9,7 @@ Nesse aplicativo 'Cronometro com técnica Pomodoro' sera apresentado uma page co
 - Som nas interações com cards, e cada card terá um som especifíco;
 - Nessa versão 2.0 o usuário não terá a opção de selecionar um minuto especifíco. Porém possui 2 botões, um para somar 5 minutos no tempo e o outro para subtrair 5 minutos do tempo.
 - O aplicativo possui 4 cards e cada card clicando neles emitirá sons especifíco ao tema de cada card. 
+- Inclusão de botão para alternar tema do aplicativo entre 'White theme' e 'Dark Theme'
 
 # Nessa etapa apliquei alguns conceitos em JS e CSS:
 - [x]  Utilização de variáveis no CSS;
