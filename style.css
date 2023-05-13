@@ -130,7 +130,7 @@ button.dark svg path{
   background-color: var(--bg-cardsDark);
 }
 .dark ~ input {
-  background-color: var(--bg-white)
+  background-color: var(--bg-white);
 }
 .dark ~ input::-webkit-slider-thumb{
   background-color: var(--bg-white)
