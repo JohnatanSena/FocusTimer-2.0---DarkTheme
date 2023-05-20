@@ -5,14 +5,9 @@ import {
   btnPause,
   minutesDisplay,
   secondsDisplay,
-  controlsPlayDark,
-  controlsPauseDark,
-  controlsStopDark,
-  controlsSumDark,
-  controlsSubtractionDark,
-  
 } from "./elements.js"
 import { Events } from "./events.js"
+import { Sounds } from "./sounds.js"
 
 const controls = Controls({
   btnPlay,
@@ -23,8 +18,5 @@ const timer = Timer({
   secondsDisplay,
   resetControls: controls.resetControls
 })
-Events({controls, timer})
-
-
-
-
+const sounds = Sounds()
+Events({controls, timer, sounds})

@@ -8,6 +8,7 @@
   --bg-white: hsl(0, 0%, 100%);
   --bg-dark: hsla(240, 5%, 7%, 1);
   --bg-clicked: hsla(194, 97%, 31%, 1);
+  --bg-clickedDark:  rgb(3, 65, 83);
   --bg-cardsWhite: hsla(240, 9%, 89%, 1);
   --bg-controlsDark: hsla(240, 7%, 78%, 1);
   --bg-cardsDark: hsla(240, 6%, 17%, 1);
@@ -18,6 +19,7 @@
 }
 body {
   font-family: var(--ff-roboto);
+  overflow: hidden;
 }
 .hide {
   display: none;
@@ -33,7 +35,6 @@ main {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 19.2rem;
 }
 .display{
@@ -116,6 +117,7 @@ button.clicked {
 .clicked ~ input::-webkit-slider-thumb {
   background-color: #fff;
 }
+
 /* DARTK THEME */
 body.dark {
   background: var(--bg-dark);
@@ -136,6 +138,15 @@ button.dark svg path{
   background-color: var(--bg-white)
 }
 
-
-
-
+button.dark.clicked {
+  background: var(--bg-clickedDark);
+}
+.dark.clicked svg path {
+  fill: white;
+}
+.dark.clicked ~ input {
+  background-color: #fff;
+}
+.dark.clicked ~ input::-webkit-slider-thumb {
+  background-color: #fff;
+}

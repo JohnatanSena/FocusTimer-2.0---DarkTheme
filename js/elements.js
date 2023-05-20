@@ -5,6 +5,8 @@ let btnSum = document.querySelector('.sum');
 let btnSubtraction = document.querySelector('.subtraction');
 let minutesDisplay = document.querySelector('.minutes');
 let secondsDisplay = document.querySelector('.seconds');
+let sliders = document.querySelectorAll('.card input')
+
 // Selectors DarkTheme
 let body = document.querySelector('body');
 let bodyWhite = document.querySelector('.whiteTheme');
@@ -41,4 +43,5 @@ export {
   cardRainDark,
   cardCoffeDark,
   cardFireDark,
+  sliders,
 }

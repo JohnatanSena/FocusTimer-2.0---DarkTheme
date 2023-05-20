@@ -22,6 +22,7 @@ export function Timer({
     let seconds = secondsDisplay.textContent;
   
     if(minutes == 0 && seconds == 0){
+      resetDisplay()
       resetControls();
       return;
     }

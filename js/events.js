@@ -17,9 +17,10 @@ import {
   cardRainDark,
   cardCoffeDark,
   cardFireDark,
+  sliders,
 } from "./elements.js"
 
-export function Events({controls, timer}){
+export function Events({controls, timer, sounds}){
   btnPlay.addEventListener('click', () =>{
     controls.play()
     timer.countDown();
@@ -32,8 +33,8 @@ export function Events({controls, timer}){
     timer.hold()
     timer.resetDisplay();
   })
-  btnSum.onclick = ()=> {sumFiveMinutes()}
-  btnSubtraction.onclick = () => {subtractionFiveMinutes()}
+  btnSum.onclick = ()=> {timer.sumFiveMinutes()}
+  btnSubtraction.onclick = () => {timer.subtractionFiveMinutes()}
 
   bodyWhite.addEventListener('click', ()=>{
     body.classList.add('dark');
@@ -48,7 +49,6 @@ export function Events({controls, timer}){
     cardRainDark.classList.add('dark');
     cardCoffeDark.classList.add('dark');
     cardFireDark.classList.add('dark');
-
   })
   bodyDark.addEventListener('click', () =>{
     body.classList.remove('dark');
@@ -69,23 +69,34 @@ export function Events({controls, timer}){
     cardRainDark.classList.remove('clicked');
     cardCoffeDark.classList.remove('clicked');
     cardFireDark.classList.remove('clicked');
+    sounds.forestOn();
   })
   cardRainDark.addEventListener('click', () => {
     cardRainDark.classList.toggle('clicked');
     cardForestDark.classList.remove('clicked');
     cardCoffeDark.classList.remove('clicked');
     cardFireDark.classList.remove('clicked');
+    sounds.rainOn()
   })
   cardCoffeDark.addEventListener('click', ()=> {
     cardCoffeDark.classList.toggle('clicked');
     cardForestDark.classList.remove('clicked');
     cardRainDark.classList.remove('clicked');
     cardFireDark.classList.remove('clicked');
+    sounds.coffeOn();
   })
   cardFireDark.addEventListener('click', ()=> {
     cardFireDark.classList.toggle('clicked');
     cardForestDark.classList.remove('clicked');
     cardRainDark.classList.remove('clicked');
     cardCoffeDark.classList.remove('clicked');
+    sounds.fireOn()
+  })
+  sliders.forEach((slider)=> {
+    slider.addEventListener('input', () => {
+      const audio = slider.previousElementSibling.id;
+      const volume = Number(slider.value);
+      sounds.setVolume(audio, volume);
+    })
   })
   }
