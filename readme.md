@@ -13,7 +13,6 @@ Nesse aplicativo 'Cronometro com técnica Pomodoro' sera apresentado uma page co
 
 # Nessa etapa apliquei alguns conceitos em JS e CSS:
 - [x]  Utilização de variáveis no CSS;
-- [x]  Utilização do `display: grid`;
 - [x]  Utilização da DOM no navegador;
 - [x]  Funções callbacks;
 - [x]  Saber o que é recursividade;
@@ -24,3 +23,12 @@ Nesse aplicativo 'Cronometro com técnica Pomodoro' sera apresentado uma page co
 - [x]  Injeção de dependências;
 - [x]  Refatoração de código;
 - [x]  Adicionar sons pelo JavaScript;
+
+# Como usar aplicação em diretórios locais
+- Faça download dos arquivos (zip) repositório [https://github.com/JohnatanSena/FocusTimer-2.0---DarkTheme];
+- Execute aplicação conforme GIF's
+
+![ezgif com-gif-maker (1)](https://github.com/JohnatanSena/FocusTimer-2.0---DarkTheme/assets/91350884/119626e4-4b3c-43d0-91b9-9142b3e8d7d0)
+
+
+
