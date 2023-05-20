@@ -26,7 +26,16 @@ Nesse aplicativo 'Cronometro com técnica Pomodoro' sera apresentado uma page co
 
 # Como usar aplicação em diretórios locais
 - Faça download dos arquivos (zip) repositório [https://github.com/JohnatanSena/FocusTimer-2.0---DarkTheme];
-- Execute aplicação conforme GIF's
+- Execute aplicação conforme passos abaixo:
+1. Vá até extesões no Vscode
+2. Baixe a extensão "live server"
+3. Após clicar em instalar, aguarde até a finalização da instalação
+4. Volte aos arquivos da aplicação
+5. Clica com botão direito do mouse no "index.html"
+6. Clica em "Open with live server"
+
+- Abaixo um Gifs demonstrando os passos:
+
 
 ![ezgif com-gif-maker (1)](https://github.com/JohnatanSena/FocusTimer-2.0---DarkTheme/assets/91350884/119626e4-4b3c-43d0-91b9-9142b3e8d7d0)
 
