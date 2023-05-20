@@ -34,7 +34,7 @@ Nesse aplicativo 'Cronometro com técnica Pomodoro' sera apresentado uma page co
 5. Clica com botão direito do mouse no "index.html"
 6. Clica em "Open with live server"
 
-- Abaixo um Gifs demonstrando os passos:
+- Abaixo um GIF demonstrando os passos:
 
 
 ![ezgif com-gif-maker (1)](https://github.com/JohnatanSena/FocusTimer-2.0---DarkTheme/assets/91350884/119626e4-4b3c-43d0-91b9-9142b3e8d7d0)
